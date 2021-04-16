@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import './style.css';
+import './style.scss';
 
 let sec = 0;
 
