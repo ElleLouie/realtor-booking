@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import DayTimePicker from '@mooncake-dev/react-day-time-picker';
 
 function Book(props) {
   const [name, setName] = useState('');
@@ -19,7 +18,7 @@ function Book(props) {
             <div>
               <h2>Time:</h2>
               <h2>Date: </h2>
-              <div className="schedule-container"><DayTimePicker timeSlotSizeMinutes={60} /></div>
+              <div className="schedule-container"> </div>
             </div>
           </div>
           <div className="input-right">
