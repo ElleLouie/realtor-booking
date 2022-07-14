@@ -1,8 +1,260 @@
 body, html {
-    font-family: "Roboto", sans-serif;
-    background: linear-gradient(to bottom, #87e0fd 0%,#53cbf1 40%,#05abe0 100%);
-    height: 100%;
+  font-size: 16px;
+  margin: 0px;
+  box-sizing: border-box;
+  background-color: #2C3639;
+  height: 100%;
+  min-height: 100%;
+}
+#main {
+  height: 100%;
+}
+.page-container{
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+
+nav {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 18px;
+  color: black;
+  position: fixed;
+  height: 100%;
+  width: 200px;
+}
+
+.nav-home {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 10px 14px;
+  height: 30%;
+}
+
+.nav-item, .nav-home {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em;
+  font-family: 'Jura', sans-serif;
+  padding: 10px 0px;
+}
+
+.nav-item:hover{
+  opacity: 70%;
+}
+
+//home
+#home {
+  color:white;
+  margin-left: 200px;
+  font-family: 'Jura', sans-serif;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  img{
+    width: 60%;
   }
-.active {
-  color: pink;
+}
+
+.home_description{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-items: center;
+  height: fit-content;
+  padding: 5%;
+  h1 {
+    font-size: 2em;
+  }
+  p {
+    font-size:  1.5em;
+  }
+  span {
+    font-size: 1em;
+    color: grey;
+  }
+
+}
+
+img{
+  height: 100%;
+  width: auto;
+}
+
+//package
+.package-display {
+  display: flex;
+  flex-direction: row;
+  margin-left: 200px;
+  img {
+    width:100%;
+    opacity: 40%;
+    object-fit: cover;
+  }
+}
+
+.package-display-item {
+  position: relative;
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+.package-content-container {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  height: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10%;
+  h1{
+    font-size: 4rem;
+    font-weight: 700;
+
+  }
+  h3{
+    opacity: 70%;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  p{
+    font-size: 2em;
+  }
+}
+.modal-container {
+  align-self: flex-end;
+}
+.modal-body {
+  color: black
+}
+
+
+//project
+.project-container {
+  width: 100%;
+  min-height: 100%;
+}
+.project-display {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 200px;
+  min-height: 100%;
+}
+
+.project-display-item {
+  position: relative;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  width: 25%;
+  background-image: url(img/bath.jpg);
+  background-size: cover;
+  opacity: 70%;
+  h1{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    opacity: 70%;
+    font-size: 2rem;
+    font-weight: 700;
+    overflow-wrap: normal;
+    width: 50%;
+  }
+  .text-block{
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    font-size: 1em;
+    font-weight: 100;
+    transform: rotate(-90deg);
+  }
+}
+
+
+.booking{
+  margin-left: 236px;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  .input-container{
+    padding: 15%;
+    width: 100%;
+    }
+  .input-group{
+    padding: 5%;
+    background-color: #7F8487;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    .input-left {
+      padding: 10px 14px;
+      min-width: fit-content;
+      width: 50%;
+      h1{
+        font-size: 2em;
+      }
+    }
+    .input-right {
+      padding: 10px 14px;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  input {
+    padding: 10px 14px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+    border-radius: 5px;
+    border: none;
+  }
+  button {
+    padding: 10px 14px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+    border-radius: 8px;
+    background-color: #2C3639;
+    color: white;
+  }
+  button:hover {
+    opacity: 70%;
+  }
+  h2 {
+    font-weight: 200;
+    font-size: 1em;
+  }
+}
+.schedule-container {
+  width: 475px;
+  margin: 1em auto;
+  padding: 1em;
+  background-color: white;
+  color: #2C3639;
+  border: 1px solid #f0f0f0;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px 4px #00000018;
+  @media (max-width: 520px) {
+    width: 100%;
+  }
 }

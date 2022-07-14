@@ -48,7 +48,9 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
+    "@mooncake-dev/react-day-time-picker": "^1.0.5",
     "axios": "^0.21.1",
+    "bootstrap": "^5.2.0-beta1",
     "jquery": "^3.6.0",
     "lodash.debounce": "^4.0.8",
     "react": "^17.0.2",
