@@ -1,16 +1,15 @@
 import React from 'react';
-import {
-  BrowserRouter as Router, Route, Switch,
-} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Nav from './nav';
 import Projects from './projects';
 import Packages from './packages';
 import Book from './book';
 import Home from './home';
-
+// import ScrollToTop from './ScrollToTop';
 const About = (props) => {
   return <div> All there is to know about me </div>;
 };
+
 const FallBack = (props) => {
   return <div>URL Not Found</div>;
 };
@@ -19,6 +18,7 @@ const App = (props) => {
   return (
     <Router>
       <div className="page-container">
+        {/* <ScrollToTop /> */}
         <Nav />
         <Switch>
           <Route exact path="/" component={Home} />

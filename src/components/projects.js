@@ -57,14 +57,12 @@ const renderProjects = (item) => {
 
 const Projects = () => {
   return (
-    <div className="project-container">
-      <div className="project-display">
-        {ProjectData.map((item) => {
-          return (
-            renderProjects(item)
-          );
-        })}
-      </div>
+    <div className="project-display">
+      {ProjectData.map((item) => {
+        return (
+          renderProjects(item)
+        );
+      })}
     </div>
   );
 };

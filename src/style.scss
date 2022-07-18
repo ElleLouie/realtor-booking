@@ -12,9 +12,16 @@ body, html {
 .page-container{
   width: 100%;
   min-height: 100%;
-  display: flex;
-  flex-direction: row;
+  // display: flex;
+  // flex-direction: row;
   margin: auto;
+}
+
+.section-wrapper {
+  height: 860px;
+  width: 100%;
+  //max-width: 900px;
+  overflow: hidden;
 }
 
 
@@ -57,27 +64,35 @@ nav {
 }
 
 //home
-#home {
+.home-container {
   color:white;
   margin-left: 200px;
-  font-family: 'Jura', sans-serif;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: autp;
+  .home-img{
+    width: 60%;
+    opacity: 60%;
+    position: relative;
+  }
+}
+
+#home-wrapper{
   display: flex;
   flex-direction: row;
-  width: 100%;
-  img{
-    width: 60%;
-  }
 }
 
 .home_description{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-items: center;
+  justify-content: space-between;
   height: fit-content;
   padding: 5%;
-  h1 {
-    font-size: 2em;
+  height: 50%;
+  h3 {
+    font-size: 1em;
   }
   p {
     font-size:  1.5em;
@@ -86,30 +101,28 @@ nav {
     font-size: 1em;
     color: grey;
   }
-
-}
-
-img{
-  height: 100%;
-  width: auto;
 }
 
 //package
 .package-display {
   display: flex;
   flex-direction: row;
-  margin-left: 200px;
-  img {
-    width:100%;
-    opacity: 40%;
-    object-fit: cover;
-  }
+  height: 100%;
+  // img {
+  //   width:100%;
+  //   opacity: 40%;
+  //   object-fit: cover;
+  // }
 }
 
 .package-display-item {
   position: relative;
   color: white;
   font-family: 'Lato', sans-serif;
+  height: 100%;
+  background-image: url(img/package.jpg);
+  background-size: cover;
+  width: 25%;
 }
 .package-content-container {
   position: absolute;
@@ -124,7 +137,6 @@ img{
   h1{
     font-size: 4rem;
     font-weight: 700;
-
   }
   h3{
     opacity: 70%;
@@ -143,16 +155,12 @@ img{
 }
 
 
+
 //project
-.project-container {
-  width: 100%;
-  min-height: 100%;
-}
 .project-display {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-left: 200px;
   min-height: 100%;
 }
 
@@ -168,7 +176,6 @@ img{
     position: absolute;
     top: 5%;
     left: 10%;
-    opacity: 70%;
     font-size: 2rem;
     font-weight: 700;
     overflow-wrap: normal;
@@ -179,14 +186,13 @@ img{
     bottom: 10%;
     left: 5%;
     font-size: 1em;
-    font-weight: 100;
+    font-weight: 700;
     transform: rotate(-90deg);
   }
 }
 
 
 .booking{
-  margin-left: 236px;
   color: white;
   font-family: 'Lato', sans-serif;
   display: flex;
