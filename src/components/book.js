@@ -28,7 +28,7 @@ function Book(props) {
             <input type="text" id="name" onChange={(e) => setEmail(e.target.value)} placeholder="email" />
             <h2>Phone Number</h2>
             <input type="text" id="name" onChange={(e) => setPhone(e.target.value)} placeholder="phone" />
-            <button type="button" onClick={submit}>sign in</button>
+            <button type="button" className="btn btn-outline-light" onClick={submit}>SIGN IN</button>
           </div>
         </div>
       </div>

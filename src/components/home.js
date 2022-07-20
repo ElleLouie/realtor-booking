@@ -3,25 +3,27 @@ import homeimg from '../img/home.jpg';
 import Packages from './packages';
 import Projects from './projects';
 import Book from './book';
-
-const About = (props) => {
-  return <div> All there is to know about me </div>;
-};
+import About from './about';
 
 const Home = () => {
   return (
-    <div id="home" className="home-container">
+    <div className="home-container">
       <div className="section-wrapper">
         <div id="home-wrapper">
           <img src={homeimg} className="home-img" alt="kitchen" />
-          <div className="home_description">
-            <h3> FEATURED PROJECT</h3>
-            <div>
-              <p> OCEANSIDE</p>
-              <p> 2020</p>
-              <p> interior and exterior</p>
+          <div className="home-description">
+            <h3>FEATURED PROJECT</h3>
+            <div className="home-description-wrapper">
+              <div className="home-description-title">
+                <h1>Classic & Modern</h1>
+              </div>
+              <div className="home-description-detail">
+                <p> OCEANSIDE</p>
+                <p> 2020</p>
+                <p> interior and exterior</p>
+                <span> SEE PROJECT DETAILS </span>
+              </div>
             </div>
-            <span> SEE PROJECT DETAILS </span>
           </div>
         </div>
       </div>
